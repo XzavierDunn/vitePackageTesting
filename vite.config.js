@@ -7,7 +7,6 @@ export default defineConfig({
   build: {
     lib: {
       entry: {
-        index: resolve(__dirname, "lib/index.ts"),
         reactForm: resolve(__dirname, "lib/reactComponents/index.ts"),
         vueForm: resolve(__dirname, "lib/vueComponents/index.ts"),
       },
@@ -16,9 +15,6 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ["react", "react-dom", "vue"],
-      output: {
-        // entryFileNames: "[name].[format].js",
-      },
     },
   },
   plugins: [dts({ rollupTypes: true })],
