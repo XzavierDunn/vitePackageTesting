@@ -1,1 +1,1 @@
-export const indexFile: string = "index file";
+export const indexFile: string = "change";
