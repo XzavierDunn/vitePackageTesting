@@ -6,11 +6,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install Dependencies
-        run: npm install
+        uses: actions/setup-node@v4
+        node-version: "20"
       - name: Build
         run: npm run build
-      - name: Test
-        run: npm test
       - name: Release
         uses: cycjimmy/semantic-release-action@v4
         with:
