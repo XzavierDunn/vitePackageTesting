@@ -4,6 +4,9 @@
     ],
     "plugins": [
         "@semantic-release/npm",
+        {
+            "pkgRoot": "dist"
+        },
         "@semantic-release/commit-analyzer",
         "@semantic-release/release-notes-generator",
         [
