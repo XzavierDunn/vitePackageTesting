@@ -1,0 +1,45 @@
+{
+  "name": "vite-testing",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs",
+  "module": "dist/index.es",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./react": {
+      "import": "./dist/reactForm.es",
+      "require": "./dist/reactForm.cjs",
+      "types": "./dist/reactForm.d.ts"
+    },
+    "./vue": {
+      "import": "./dist/vueForm.es",
+      "require": "./dist/vueForm.cjs",
+      "types": "./dist/vueForm.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "vite build"
+  },
+  "author": "XD",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.2.74",
+    "semantic-release": "^23.0.7",
+    "typescript": "^5.4.4",
+    "vite": "^5.2.8",
+    "vite-plugin-dts": "^3.8.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "vue": "^3.2.11"
+  }
+}
