@@ -1,6 +1,6 @@
 {
   "name": "vite-testing",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "type": "module",
   "files": [
     "dist"
@@ -26,7 +26,8 @@
     }
   },
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "semantic-release": "semantic-release"
   },
   "author": "XD",
   "license": "MIT",
@@ -43,5 +44,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "vue": "^3.2.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XzavierDunn/vitePackageTesting.git"
   }
 }
