@@ -7,12 +7,12 @@
   ],
   "exports": {
     "./react": {
-      "import": "./dist/reactForm.es",
+      "import": "./dist/reactForm.js",
       "require": "./dist/reactForm.cjs",
       "types": "./dist/reactForm.d.ts"
     },
     "./vue": {
-      "import": "./dist/vueForm.es",
+      "import": "./dist/vueForm.js",
       "require": "./dist/vueForm.cjs",
       "types": "./dist/vueForm.d.ts"
     }

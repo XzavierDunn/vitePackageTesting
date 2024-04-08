@@ -5,13 +5,13 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
+    sourcemap: true,
     lib: {
       entry: {
-        reactForm: resolve(__dirname, "lib/reactComponents/index.ts"),
-        vueForm: resolve(__dirname, "lib/vueComponents/index.ts"),
+        reactForm: "./lib/reactComponents/index.ts",
+        vueForm: "./lib/vueComponents/index.ts",
       },
       formats: ["es", "cjs"],
-      fileName: (format, entryName) => `${entryName}.${format}`,
     },
     rollupOptions: {
       external: ["react", "react-dom", "vue"],
